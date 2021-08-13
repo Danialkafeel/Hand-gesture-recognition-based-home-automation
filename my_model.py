@@ -53,11 +53,11 @@ def create_training_data():
 	print(Y[51])
 
 
-# def training_model():
-# 	global X
-# 	global Y
-# 	global IMG_SIZE
-# 	X = X/255
+def training_model():
+	global X
+	global Y
+	global IMG_SIZE
+	X = X/255
 
 	model = Sequential()
 	model.add(Conv2D(input_shape=(224,224,3),filters=64,kernel_size=(3,3),padding="same", activation="relu"))
@@ -93,7 +93,7 @@ def create_training_data():
 
 if __name__ == '__main__':
 	create_training_data()
-	# training_model()
+	training_model()
 	
 
 
